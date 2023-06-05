@@ -2,28 +2,18 @@
     --main-gradient:linear-gradient(84deg,#dc85d4, #c56ef4);
 }
 
-a {
-    color: purple;
-    transition: color 0.5s ease, background-color 0.5s ease;
-}
-
-a:hover {
-    color: white;
-    background: #c56ef4;
-}
-
 * {
-    background-color: rgb(237, 237, 237);
+    background-color: white;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: Hack,monospace;
+    font-family: 'Proxima Nova', sans-serif;
 }
 
 nav {
-  gap: 16px;
   margin: 20 0;
-  width: 90%;
+  width: 100%;
+  z-index: 10;
 }
 
 nav > ul {
@@ -31,9 +21,9 @@ nav > ul {
     flex-direction: row;
     justify-content: right;
     list-style-type: none;
-    font-size: 20;
     min-width: min-content;
     width: 100%;
+    
 }
 
 nav > ul > li {
@@ -42,15 +32,21 @@ nav > ul > li {
     max-width: 110px;
 }
 
-nav > ul > li > a {
-    padding: 10 30;
+.button {
+    padding: 10;
     border-radius: 25px;
     color: Purple;
-    text-transform: Capitalize;
-    display: flex;
-    width: auto;
-    justify-content: center;
-    max-width: 15vw;
+    font-size: 20;
+}
+
+nav-link, a {
+    color: purple;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+nav-link, a:hover {
+    color: white;
+    background: #dc85d4;
 }
 
 
@@ -63,43 +59,174 @@ justify-content: center;
 margin-top: 50;
 }
 
+
 #photo
 {
   width: 300;
-  object-fit: contain;
+  height: 400;
+  object-fit: cover;
   border-radius: 20px;
-  z-index: 1;
+  position: relative;
+  z-index: 9;
+  margin: 10
 }
 
 #shadow1 {
+  background-color: #dc85d4;
+  position: absolute;
+  margin: 10 30;
+  width: 310;
+  height: 400;
+  z-index: 2;
+  top: 120;
+  border-radius: 20px;
+  transform: rotate(10deg)
+}
+
+#shadow2 {
   background-color: pink;
   position: absolute;
-  width: 45%;
-  height: 45%;
+  margin: 10 20;
+  width: 310;
+  height: 400;
   z-index: 2;
-  top: 300;
+  top: 113;
+  border-radius: 20px;
+  transform: rotate(5deg)
 }
 
-.welcome-text {
+#w-s-left-box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 10;
 }
 
-#about-welcome{
-    padding: 10 30;
-    border-radius: 25px;
-    color: Purple;
-    text-transform: Capitalize;
+#w-s-bottom {
+ display: flex;
+ justify-content: space-around;
+ max-width: 400;
+ align-items: center;
+}
+
+#contact-icons{
+    width: 100;
+}
+
+#w-s-bottom > ul {
     display: flex;
-    width: auto;
-    justify-content: center;
-    max-width: 15vw;
+    justify-content: space-between;
+    font-size: 20;
+    transition: color 0.5s ease, background-color 0.5s ease;
 }
 
-#about-welcome:hover {
+i {
+    background: transparent;
+}
+
+#w-s-bottom > ul:hover {
     color: white;
-    background: #c56ef4;
+    background: #dc85d4;
+}
+
+#about-me{
+  text-align: center;
+  padding: 2rem 2rem;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects-section {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  text-align: center;
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: dc85d4;
+  border-radius: 2px;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
