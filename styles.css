@@ -67,7 +67,17 @@ margin-top: 50;
 {
   width: 300;
   object-fit: contain;
-   border-radius: 20px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+#shadow1 {
+  background-color: pink;
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  z-index: 2;
+  top: 300;
 }
 
 .welcome-text {
