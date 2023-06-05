@@ -1,0 +1,95 @@
+:root {
+    --main-gradient:linear-gradient(84deg,#dc85d4, #c56ef4);
+}
+
+a {
+    color: purple;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+a:hover {
+    color: white;
+    background: #c56ef4;
+}
+
+* {
+    background-color: rgb(237, 237, 237);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Hack,monospace;
+}
+
+nav {
+  gap: 16px;
+  margin: 20 0;
+  width: 90%;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style-type: none;
+    font-size: 20;
+    min-width: min-content;
+    width: 100%;
+}
+
+nav > ul > li {
+    margin: 0 5;
+    flex: 1 1 0px;
+    max-width: 110px;
+}
+
+nav > ul > li > a {
+    padding: 10 30;
+    border-radius: 25px;
+    color: Purple;
+    text-transform: Capitalize;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    max-width: 15vw;
+}
+
+
+#welcome-section {
+display: flex;
+flex-direction: row;
+width: 90%;
+margin: auto;
+justify-content: center;
+margin-top: 50;
+}
+
+#photo
+{
+  width: 300;
+  object-fit: cover;
+   border-radius: 20px;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about-welcome{
+    padding: 10 30;
+    border-radius: 25px;
+    color: Purple;
+    text-transform: Capitalize;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    max-width: 15vw;
+}
+
+#about-welcome:hover {
+    color: white;
+    background: #c56ef4;
+}
+
+
