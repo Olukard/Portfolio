@@ -24,9 +24,9 @@
   margin-top: 200px;
 }
 
-@media (max-width: 30.625em) {
+@media (max-width: 600px) {
   .divider-wide {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
@@ -75,11 +75,6 @@ nav a:hover {
     background: #dc85d4;
 }
 
-@media (max-width: 28.75em) {
-  nav a {
-    font-size: 1rem;
-  }
-}
 
 
 /* NAV BAR END */
@@ -101,7 +96,7 @@ max-width: 1280px;
     background: #dc85d4;
 }
 
-@media (max-width: 30.625em) {
+@media (max-width: 600px) {
   #welcome-section {
     flex-direction: column;
   }
@@ -135,7 +130,7 @@ max-width: 1280px;
 transform: rotate(10deg)
 }
 
-@media (max-width: 30.625em) {
+@media (max-width: 600px) {
     #photobox {
         margin: auto;
     }
@@ -195,6 +190,7 @@ margin: 40px auto;
 justify-content: center;
 margin-top: 50px;
 max-width: 800px;
+padding-top: 40px;
 }
 
 #about-me > h1{
@@ -241,7 +237,6 @@ max-width: 800px;
   .projects-section {
     text-align: center;
     padding: 1rem 2rem;
-    background: var(--main-blue);
   }
   
   .projects-section-header {
@@ -250,14 +245,7 @@ max-width: 800px;
     border-bottom: 0.2rem solid var(--main-white);
   }
   
-  @media (max-width: 28.75em) {
-    .projects-section-header {
-      font-size: 4rem;
-    }
-  }
-  
-  /* "Automagic" image grid using no media queries */
-  .projects-grid {
+    .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
@@ -315,13 +303,10 @@ max-width: 800px;
   max-width: 640px;
   margin: 0 auto 6rem auto;
   text-align: center;
+  color: purple;
 }
 
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
+
 
 /* "Automagic" image grid using no media queries */
 .projects-grid {
