@@ -18,6 +18,10 @@
     max-width: 800px;
 }
 
+.fcf-h3{
+    color:purple;
+}
+
 .fcf-form-group {
     margin-bottom: 1rem;
 }
@@ -41,7 +45,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: purple;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -121,22 +125,15 @@ label.fcf-label {
 }
 
 .fcf-btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    color: purple;
+    background-color: white;
+    border-color: white;
 }
 
 .fcf-btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-.fcf-btn-primary:focus, .fcf-btn-primary.focus {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    background-color: #dc85d4;
+    border-color: #dc85d4;
 }
 
 .fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
