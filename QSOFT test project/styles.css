@@ -14,45 +14,39 @@
       height: 105px;
     }
   }
-  
-  #layout-img {
-    position: absolute;
-    opacity: 0.3;
-  }
-  
-  .main-container--center-aligned {
+
+  /* Начало тестового задания */
+
+  .main-container_center-aligned {
     position: relative;
     max-width: 1240px;
     margin: 0 100px;
-    margin-top: 70px;
+    padding: 4.37rem 0;
   }
   @media (max-width: 1025px) {
-    .main-container--center-aligned {
+    .main-container_center-aligned {
       margin: 0 20px;
       margin-top: 70px;
     }
   }
   
-  .title-container {
-    margin-bottom: 30px;
-  }
-  
-  .title-container__title-text {
+  .text-container__title-text_title-main {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 160%;
     text-transform: uppercase;
+    margin-bottom: 0.8em;
   }
   
   @media (max-width: 1025px) {
-    .title-container__title-text {
-      font-size: 28px;
+    .text-container__title-text_title-main {
+      font-size: 1.75rem;
     }
   }
   
-  .partners {
+  .partners-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -62,29 +56,12 @@
   }
   
   @media (max-width: 1025px) {
-    .partners {
+    .partners-container {
       gap: 20px;
     }
   }
   
-  .partners__placeholder {
-    height: 0px;
-    flex: 1 0 250px;
-  }
-  
-  @media (max-width: 1025px) {
-    .partners__placeholder {
-      flex: 1 0 200px;
-    }
-  }
-
-  @media (max-width: 1424px) {
-    .partners__placeholder .row1{
-      visibility: hidden;
-    }
-  }
-  
-  .partners__company {
+  .partners-container__company {
     height: 118px;
     border: 1px solid #ebebf1;
     border-radius: 5px;
@@ -96,27 +73,39 @@
   }
   
   @media (max-width: 1025px) {
-    .partners__company {
+    .partners-container__company {
       flex: 1 0 200px;
     }
   }
   
   @media (max-width: 440px) {
-    .partners__company {
+    .partners-container__company {
       flex: 1 0 100%;
       height: 138px;
     }
   }
-  .partners__company:hover {
+
+  .partners-container__company:hover {
     box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1),
       0px 0px 10px rgba(164, 164, 164, 0.03);
     cursor: pointer;
   }
   
-  .partners__company img {
+  .partners-container__company img {
     width: 70%;
     height: 70%;
     object-fit: contain;
     object-position: 50% 50%;
+  }
+
+  .partners-container__placeholder {
+    height: 0px;
+    flex: 1 0 250px;
+  }
+  
+  @media (max-width: 1025px) {
+    .partners-container__placeholder {
+      flex: 1 0 200px;
+    }
   }
   
