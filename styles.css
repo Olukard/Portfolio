@@ -269,6 +269,7 @@ padding-top: 40px;
     height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
+    max-height: 400px;
   }
   
   .project-title {
